@@ -11,6 +11,11 @@ android {
         versionCode 4
         versionName '0.4-BLE-final'
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 dependencies {
