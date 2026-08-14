@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVSENSO"
+            android:textColor="@color/ev_blue"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRECISION TYRE TREAD PROFILE • BLE"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="OpenMV AE3 + Green Laser Line"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/ev_light"
+            android:padding="12dp"
+            android:text="Sensor: DISCONNECTED\nCalibration: waiting for sensor"
+            android:textColor="@color/ev_blue"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CONNECT AE3" />
+
+            <Button
+                android:id="@+id/demoButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="DEMO PROFILE" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Vehicle / Wheel Selection"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/vehicleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/ev_light" />
+
+        <Spinner
+            android:id="@+id/wheelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/ev_light" />
+
+        <Button
+            android:id="@+id/measureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="START TREAD MEASUREMENT" />
+
+        <TextView
+            android:id="@+id/currentWheelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Current Wheel Profile"
+            android:textColor="@color/ev_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.evsenso.treaddepth.ProfileView
+            android:id="@+id/profileView"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/ev_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Individual Groove Depths"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/grooveContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/measurementSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/ev_light"
+            android:padding="12dp"
+            android:text="No profile received."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE CURRENT WHEEL RESULT" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingBottom="24dp"
+            android:text="FINAL measurement mode: one-time factory geometric calibration is stored in the sensor and locked. The Android app does not recalibrate. Target measurement envelope: 420 mm width × 120 mm depth. Required system accuracy: ±0.10 mm after validation."
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
