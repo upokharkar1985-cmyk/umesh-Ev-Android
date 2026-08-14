@@ -1,0 +1,11 @@
+<resources>
+    <color name="ev_blue">#123B6D</color>
+    <color name="ev_blue_dark">#0B2748</color>
+    <color name="ev_light">#EAF2FA</color>
+    <color name="ev_green">#198754</color>
+    <color name="ev_red">#B42318</color>
+    <color name="ev_orange">#B54708</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#111827</color>
+    <color name="grey">#667085</color>
+</resources>
