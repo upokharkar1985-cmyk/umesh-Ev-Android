@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.evsenso.treaddepth'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.evsenso.treaddepth'
+        minSdk 26
+        targetSdk 35
+        versionCode 4
+        versionName '0.4-BLE-final'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.15.0'
+}
