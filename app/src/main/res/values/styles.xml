@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.EVSenso" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/ev_blue</item>
+        <item name="android:navigationBarColor">@color/ev_blue_dark</item>
+        <item name="android:statusBarColor">@color/ev_blue_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
